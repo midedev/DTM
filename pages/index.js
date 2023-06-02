@@ -6,10 +6,7 @@ const HomePage = () => {
   return (
     <Fragment>
     <Head>
-    <title>Home | Workerr </title>
-    <meta 
-    name="description" 
-    content="Find trusted hands to handle your chores"/>  
+    <title>Home </title>
     </Head>  
     <Home/>
 </Fragment>

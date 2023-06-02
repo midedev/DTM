@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Script from "next/script"
 import '../stylesheets/global.css'
-import { Provider } from 'react-redux'
-import store from "../store";
+
 
 // import { AuthContextProvider } from "../store/auth-context";
 // import { LoanContextProvider } from "../store/loan-context";
@@ -26,6 +25,9 @@ function MyApp({ Component, pageProps, router }) {
 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;402&display=swap" rel="stylesheet" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Urbanist&display=swap" rel="stylesheet"/>
 
         <link
           rel="stylesheet"
@@ -44,7 +46,7 @@ function MyApp({ Component, pageProps, router }) {
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-      <Provider store={store}>
+      {/* <Provider store={store}> */}
       <motion.div key={router.route} initial="pageInitial" animate="pageAnimate" variants={{
 
         pageInitial: {
@@ -56,7 +58,7 @@ function MyApp({ Component, pageProps, router }) {
       }}>
         <Component {...pageProps} />
       </motion.div>
-      </Provider>
+      {/* </Provider> */}
 
 
 
